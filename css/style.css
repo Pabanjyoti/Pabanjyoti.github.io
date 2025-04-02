@@ -2,6 +2,82 @@
 
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
 /*=================================================================*/
+/*                      Codeim Mods                              
+/*=================================================================*/
+.portfolio-wrapper .grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-wrapper .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-wrapper .grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-wrapper .grid-item .preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-wrapper .grid-item:hover .preview-overlay {
+  opacity: 1;
+}
+
+.portfolio-filter-mobile {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.portfolio-filter-mobile option {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.portfolio-filter-mobile option:hover {
+  background-color: #f9f9f9;
+}
+
+.portfolio-filter-mobile option:focus {
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.portfolio-filter-mobile {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-filter-mobile option {
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+/*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
 * {
