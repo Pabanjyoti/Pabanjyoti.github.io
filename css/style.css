@@ -1132,10 +1132,10 @@ select.portfolio-filter-mobile {
   position: relative;
 }
 .pf-filter-wrapper:after {
-  content: "";
+  content: " 〓 ";
   font-family: "FontAwesome";
   position: absolute;
-  top: 0;
+  top: .5em;
   right: 20px;
   color: #000;
 }
